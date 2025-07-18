@@ -49,7 +49,7 @@ function socialLogin(provider) {
         showMessage(`¡Sesión iniciada exitosamente con ${provider}!`, 'success');
         setTimeout(() => {
             alert(`¡Bienvenido! Has iniciado sesión con ${provider}`);
-            window.location.href = './index.html';
+            window.location.href = '/index.html';
         }, 1000);
     }, 1500);
 }
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 setTimeout(() => {
                     alert(`¡Bienvenido ${email}!\n\nHas iniciado sesión exitosamente.`);
-                    window.location.href = './index.html';
+                    window.location.href = '/index.html';
                 }, 1000);
             }, 1000);
         } else {
