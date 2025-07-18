@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Tentaciones - Blog de Postres</title>
+    <link rel="stylesheet" href="/css/chees.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">Dulces Tentaciones</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#recetas">Recetas</a></li>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+     <div class="container">
+        <!-- Recipe Header -->
+        <div class="recipe-header">
+            <div class="recipe-image">
+                🍰
+            </div>
+            <h1 class="recipe-title">Cheesecake de Frutos Rojos</h1>
+            <div class="recipe-meta">
+                <div class="meta-item">
+                    <span class="meta-icon">⏱️</span>
+                    <span>Prep: 30 min</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">🔥</span>
+                    <span>Cocción: 60 min</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">❄️</span>
+                    <span>Refrigeración: 4 hrs</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-icon">👥</span>
+                    <span>8 porciones</span>
+                </div>
+            </div>
+            <span class="difficulty">Dificultad: Intermedio</span>
+        </div>
+
+        <!-- Recipe Content -->
+        <div class="recipe-content">
+            <!-- Ingredients -->
+            <div class="ingredients-section">
+                <h2 class="section-title">
+                    <span>🛒</span> Ingredientes
+                </h2>
+                <ul class="ingredients-list">
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>800g de queso crema, temperatura ambiente</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>200g de azúcar blanca</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>4 huevos grandes</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>1 cucharadita de extracto de vainilla</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>200ml de crema de leche</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>200g de galletas digestivas</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>80g de mantequilla derretida</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>300g de frutos rojos mixtos</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>100g de azúcar para la salsa</span>
+                    </li>
+                    <li>
+                        <div class="ingredient-check" onclick="toggleCheck(this)"></div>
+                        <span>2 cucharadas de maicena</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Instructions -->
+            <div class="instructions-section">
+                <h2 class="section-title">
+                    <span>👨‍🍳</span> Instrucciones
+                </h2>
+                <ol class="instructions-list">
+                    <li>Precalienta el horno a 160°C. Engrasa un molde desmontable de 23cm.</li>
+                    <li>Tritura las galletas hasta obtener migas finas. Mezcla con la mantequilla derretida.</li>
+                    <li>Presiona la mezcla en el fondo del molde. Refrigera mientras preparas el relleno.</li>
+                    <li>Bate el queso crema hasta que esté suave y cremoso, sin grumos.</li>
+                    <li>Añade gradualmente el azúcar y bate hasta integrar completamente.</li>
+                    <li>Incorpora los huevos uno por uno, batiendo bien después de cada adición.</li>
+                    <li>Agrega la vainilla y la crema de leche. Mezcla hasta obtener una textura homogénea.</li>
+                    <li>Vierte la mezcla sobre la base de galletas. Golpea suavemente para eliminar burbujas.</li>
+                    <li>Hornea durante 50-60 minutos hasta que el centro esté ligeramente firme.</li>
+                    <li>Apaga el horno y deja la puerta entreabierta. Deja enfriar completamente.</li>
+                    <li>Refrigera por al menos 4 horas o toda la noche.</li>
+                    <li>Prepara la salsa cocinando los frutos rojos con azúcar y maicena hasta espesar.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Tips Section -->
+        <div class="tips-section">
+            <h3>
+                <span>💡</span> Consejos del Chef
+            </h3>
+            <ul class="tips-list">
+                <li>Todos los ingredientes deben estar a temperatura ambiente para evitar grumos</li>
+                <li>No abras el horno durante la cocción para evitar que se agriete</li>
+                <li>El baño maría ayuda a cocinar el cheesecake de manera uniforme</li>
+                <li>Puedes decorar con frutos rojos frescos antes de servir</li>
+                <li>Se conserva en refrigeración hasta 5 días</li>
+            </ul>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments-section">
+            <div class="comments-header">
+                <h2 class="section-title">
+                    <span>💬</span> Comentarios
+                </h2>
+                <span class="comments-count" id="commentsCount">0 comentarios</span>
+            </div>
+
+            <!-- Comment Form -->
+            <div class="comment-form">
+                <h3>Comparte tu experiencia</h3>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="userName">Nombre:</label>
+                        <input type="text" id="userName" name="userName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email:</label>
+                        <input type="email" id="userEmail" name="userEmail" required>
+                    </div>
+                    <div class="rating-group">
+                        <label>Calificación:</label>
+                        <div class="rating-stars" id="ratingStars">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="commentText">Comentario:</label>
+                        <textarea id="commentText" name="commentText" placeholder="¿Cómo te quedó la receta? ¿Algún tip adicional?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Publicar Comentario</button>
+                </form>
+            </div>
+
+            <!-- Comments List -->
+            <div class="comments-list" id="commentsList">
+                <!-- Los comentarios se agregarán aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Dulces Tentaciones es tu destino para las mejores recetas de repostería. Compartimos nuestra pasión por los postres con recetas fáciles y deliciosas.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Categorías Populares</h3>
+                    <p><a href="#">Tartas</a> • <a href="#">Cupcakes</a> • <a href="#">Galletas</a> • <a href="#">Postres Fríos</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📌</a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2025 Dulces Tentaciones. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add click effects to post cards
+        document.querySelectorAll('.post-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.98)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+
+        // Category cards hover effect
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.background = 'linear-gradient(45deg, #ffeaa7, #fab1a0)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.background = 'white';
+            });
+        });
+    </script>
+</body>
+</html>
