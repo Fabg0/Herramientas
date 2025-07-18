@@ -1,13 +1,16 @@
-function enviarComentario(comentario) {
-if (!comentario || typeof comentario !== "string" || comentario.trim() === "") {
-throw new Error("Comentario inválido.");
+function emitirComentario(io, comentario, user) {
+if (!comentario || comentario.trim().length === 0) {
+throw new Error("Comentario vacío no permitido.");
 }
 
-return {
-texto: comentario.trim(),
-fecha: new Date()
+const data = {
+usuario: user || "anónimo",
+mensaje: comentario.trim(),
+timestamp: new Date().toISOString()
 };
+
+io.emit("nuevoComentario", data);
+return data;
 }
 
-module.exports = { enviarComentario };
-
+module.exports = { emitirComentario };
