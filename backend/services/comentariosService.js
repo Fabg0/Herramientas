@@ -1,16 +1,11 @@
-function emitirComentario(io, comentario, user) {
-if (!comentario || comentario.trim().length === 0) {
-throw new Error("Comentario vacío no permitido.");
+const { emitirComentario } = require("../src/ComentarioService.v3");
+
+function testComentarioValido() {
+const mockIO = { emit: (evento, payload) => console.log("Emitió:", evento, payload) };
+const data = emitirComentario(mockIO, "¡Me encanta!", "Eva");
+console.assert(data.usuario === "Eva");
+console.log(" Comentario válido emitido correctamente");
 }
 
-const data = {
-usuario: user || "anónimo",
-mensaje: comentario.trim(),
-timestamp: new Date().toISOString()
-};
+testComentarioValido();
 
-io.emit("nuevoComentario", data);
-return data;
-}
-
-module.exports = { emitirComentario };
